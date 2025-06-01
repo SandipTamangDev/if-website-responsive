@@ -1,4 +1,18 @@
+/* Importing Google Fonts */    
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+/* Importing Font Awesome for icons */
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Importing custom CSS variables */
+:root {
+    --primary-color: #2B6599; /* Example primary color */
+    --secondary-color: #E7F6FD; /* Example secondary color */
+    --text-color: #333; /* Example text color */
+    --button-color: #2667B2; /* Example button color */
+    --button-hover-color: rgba(0, 123, 255, 0.8); /* Example button hover color */
+    --background-color: #f8f9fa; /* Example background color */
+}
 /* Reset */
 * {
     margin: 0;
@@ -32,7 +46,7 @@ a {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: blue;
+    background-color: var(--button-color);
     color: white;
 }
 
@@ -55,7 +69,7 @@ a {
 
 
 header {
-    background-color: whitesmoke;
+    background-color: var(--secondary-color);
 
 }
 
@@ -73,7 +87,7 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: var(--secondary-color);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -166,32 +180,34 @@ h2 {
 
 /* hero */
 .hero {
-    background-image: url('../img/background.png'); /* or .jpg/.jpeg based on your file */
+    background-image: url('../img/hero-background.jpg'); /* or .jpg/.jpeg based on your file */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 500px; /* makes it full screen height */
+    height: clamp(500px, 60vh, 650px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    color: white; /* or whatever color suits your image */
+    color: white;
     text-align: center;
 }
 
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
+.hero-container{
+    display: flex;
+    align-items: flex-start;
 
-
-
+}
 
 
 /* about */
 .about {
-    background-color: #f4f4f4;
+    background-color: var(--secondary-color);
 }
 
 .about-container {
@@ -243,7 +259,7 @@ h2 {
 
 /* support */   
 .support {
-    background-color: blue;
+    background-color: var(--primary-color);
 }
 
 .support-container {
@@ -258,7 +274,7 @@ h2 {
 }
 
 .support__content {
-    background-color: #f4f4f4;
+    background-color: var(--secondary-color);
     padding: 20px;
 }
 
@@ -290,7 +306,7 @@ h2 {
 }
 /* commitment */
     .commitments {
-        background-color: #f4f4f4;
+        background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
     }
@@ -327,7 +343,7 @@ h2 {
     }
 /* footer */
 footer {
-    background-color: blue;
+    background-color: var(--primary-color   );
     color: #fff;
     padding: 20px 0;
     text-align: center;
