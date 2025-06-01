@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* for button */
+.btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.btn-icon {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--secondary-color);
+}
+
+
