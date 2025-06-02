@@ -21,8 +21,7 @@ This is a solution for creating a clean, modern, and responsive CSS stylesheet. 
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/responsive-css-stylesheet)
-- Live Site URL: [GitHub Pages](https://yourusername.github.io/responsive-css-stylesheet/)
+- Live Site URL: [GitHub Pages](https://yetithesleepingchancellor.github.io/if-website-responsive/)
 
 ## My process
 
@@ -59,9 +58,5 @@ If you have feedback or want to collab on improvements, hit me up — I’m alwa
 ## Author
 
 - Website - [Sandip Tamang](https://www.tamangsandip.com.np)  
-- GitHub - [SandipTamang](https://github.com/yourusername)  
+- GitHub - [SandipTamang](https://github.com/yetithesleepingchancellor)  
 - Frontend Mentor - [@YetiTheSleepingChancellor](https://www.frontendmentor.io/profile/YetiTheSleepingChancellor)  
-
----
-
-Keep pushing, Sandip. This is exactly the kind of project that builds your confidence and skills for bigger full-stack challenges ahead. Need help leveling up React or Node next? I got you.
