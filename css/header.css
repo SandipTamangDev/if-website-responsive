@@ -54,6 +54,16 @@ header {
     min-width: 200px;
 }
 
+.desktop-nav-lists ul li {
+    list-style: none;
+}
+
+.desktop-nav-lists ul li a{
+    text-decoration: none;
+}
+
+
+
 /* hover effects for the nav links */
 
 #desktop-active {
