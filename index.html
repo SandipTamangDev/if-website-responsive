@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d1vn/DUz/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/variable.css">
+
+    <meta name="theme-color" content="#fff" />
 
     <meta property="og:title" content="Nyisal Hostel – Empowering Himalayan Children Through Education" />
     <meta property="og:description" content="Support education and cultural preservation for children in Nyisal, Nepal." />
@@ -28,46 +27,43 @@
 <body>
     <header>
         <div class="header-container container">
-        <div>
-            <a><img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px"></a>
+            <div>
+                <img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px">
+            </div>
+
+            <ul class="desktop-nav-lists">
+                <li><a id="desktop-active" href="index.html" class="desktop-nav-link">Home</a></li>
+                <li><a href="about.html" class="desktop-nav-link">About Us</a></li>
+                <li><a href="#support" class="desktop-nav-link">Support Us</a></li>
+                <li><a href="gallery.html" class="desktop-nav-link">Gallery</a></li>
+                <li><a href="#footer" class="desktop-nav-link">Contact Us</a></li>
+            </ul>
+
+            <button class="menu-btn btn-icon" id="menu-btn">
+                <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
+            </button>
         </div>
-
-        <ul class="desktop-nav-lists">
-            <li><a id="desktop-active" href="index.html" class="desktop-nav-link">Home</a></li>
-            <li><a href="about.html" class="desktop-nav-link">About Us</a></li>
-            <li><a href="#support" class="desktop-nav-link">Support Us</a></li>
-            <li><a href="gallery.html" class="desktop-nav-link">Gallery</a></li>
-            <li><a href="#footer" class="desktop-nav-link">Contact Us</a></li>
-        </ul>
-
-        <!-- <a href="#" class="desktop-download btn">Download CV</a> -->
-        <button class="menu-btn btn-icon" id="menu-btn">
-            <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
-        </button>
     </header>
 
-    <nav class="nav-menu" id="nav-menu">
+    <nav class="nav-menu" id="nav-menu" aria-label="Mobile Navigation Menu">
         <button class="close-btn btn-icon" id="close-btn">
             <img class="close-icon" id="close-icon" src="icons/close.svg" alt="close">
         </button>
 
         <ul class="nav-lists">
-            <li><i class="fa-solid fa-house"></i> <a  href="index.html" class="nav-link">Home</a></li>
-            <li><i class="fa-regular fa-address-card"></i> <a href="about.html" class="nav-link">About Us</a></li>
-            <li><i class="fa-solid fa-phone"></i> <a href="#support" class="nav-link">Support Us</a></li>
-            <li><i class="fa-solid fa-image"></i> <a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><i class="fa-solid fa-globe"></i> <a href="#footer" class="nav-link">Contact Us</a></li>
+            <li><a  href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="#support" class="nav-link">Support Us</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="#footer" class="nav-link">Contact Us</a></li>
         </ul>
-
-        <!-- <a href="#" class="download btn">Download CV</a>    -->
-        </div>
     </nav>
 
     
     <main>
         <section class="hero" id="hero">
             <div class="overlay"></div>
-            <img class="center-img" src="img/gallery/typo.png" alt="Empower Text">
+            <img class="center-img" src="img/gallery/empower.png" alt="Empower through education image">
         </section>
 
 
@@ -76,15 +72,15 @@
             <div class="about-container container">
                 <div class="about__content">
                     <div>
-                        <h2>Who we are <span style="font-size: 3.5rem;">?</span></h2>
-                        <p>Nylsal Hostel is a transformative initiative established to provide continued education and cultural preservation for children from Nyisal village, one of Nepal's most remote and underserved communities. This proposal outlines the urgent need for your support to sustain and expand this initiative, which offers these children a pathway to education, empowerment, and the preservation of their unique Tibetan Buddhist heritage.
+                        <h2>Who we are<span style="font-size: 3.5rem;">?</span></h2>
+                        <p>Nyisal Hostel is a transformative initiative established to provide continued education and cultural preservation for children from Nyisal village, one of Nepal's most remote and underserved communities. This proposal outlines the urgent need for your support to sustain and expand this initiative, which offers these children a pathway to education, empowerment, and the preservation of their unique Tibetan Buddhist heritage.</p>
                     </div>
                     <div>
                         <a href="about.html" class="btn">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="about__image">
-                    <img src="img/gallery/mountain.jpg" alt="">
+                    <img src="img/gallery/mountain.jpg" alt="Mountain view">
                 </div>
             </div>
         </section>
@@ -92,7 +88,7 @@
         <section class="support" id="support">
             <div class="support-container container">
                 <div class="support__image">
-                    <img src="img/gallery/childrens-reading.jpg" alt="">
+                    <img src="img/gallery/childrens-reading.jpg" alt="Children reading">
                 </div>
 
                 <div class="support__content">
@@ -110,7 +106,7 @@
             <h2>OUR COMMITMENTS</h2>
             <div class="commitments-container container">
                 <div class="commitments__card">
-                    <img src="img/gallery/childrens-reading.jpg" alt="Commitment 1">
+                    <img src="img/gallery/childrens-reading.jpg" alt="Children Reading">
                         <div>
                             <h3>Education</h3>
                             <p>Through education, we empower individuals to shape their own destinies</p>
@@ -118,7 +114,7 @@
                         </div>
                 </div>
                 <div class="commitments__card">
-                    <img src="img/gallery/childrens-reading.jpg" alt="Commitment 2">  
+                    <img src="img/gallery/childrens-reading.jpg" alt="Children Reading">
                     <div>
                         <h3>Health</h3>
                         <p>Through education, we empower individuals to shape their own destinies</p>
@@ -126,7 +122,7 @@
                     </div>
                 </div>
                 <div class="commitments__card">
-                    <img src="img/gallery/childrens-reading.jpg" alt="Commitment 3">
+                    <img src="img/gallery/childrens-reading.jpg" alt="Children Reading">
                     <div>
                         <h3>Accommodation</h3>
                         <p>Through education, we empower individuals to shape their own destinies</p>
@@ -190,7 +186,7 @@
                 <div class="footer-content__logo">
                     <img src="img/logo/logo.png" alt="Logo" width="200px" height="200px">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla libero sapiente dignissimos, maiores, quo consequatur minima animi ex, in at facilis quis veniam incidunt debitis commodi. Sed quas ut fugit?</p>
+                <p>Nyisal Hostel is a transformative initiative established to provide continued education and cultural preservation for children from Nyisal village, one of Nepal's most remote and underserved communities.</p>
             </div>
             <div class="footer-section footer-links">
                 <ul>
@@ -201,31 +197,29 @@
                 </ul>
             </div>
             <div class="footer-section footer-contact">
-                <ul>
-                    <li><a href="#gallery">Our Commitments</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Social Medias</a></li>
-                </ul>
-
-                <div class="footer-social">
-                    <hr>
-                    <div style="font-size: 24px;">
-
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></i></a></li>
-                        </ul>                        
+                    <ul>
+                        <li><a href="#gallery">Our Commitments</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Social Medias</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <hr>
+                        <div style="font-size: 24px;">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>                        
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="footer-bottom">
                 &copy; 2025 Empowering By Educating. All rights reserved.
             </div>
         </div>   
     </footer>
-    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

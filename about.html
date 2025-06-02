@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d1vn/DUz/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/variable.css">
 
-    <meta property="og:title" content="Nylsal Hostel – Empowering Himalayan Children Through Education" />
+    <meta name="theme-color" content="#fff" />
+
+    <meta property="og:title" content="Nyisal Hostel – Empowering Himalayan Children Through Education" />
     <meta property="og:description" content="Support education and cultural preservation for children in Nyisal, Nepal." />
     <meta property="og:image" content="https://yourdomain.com/img/gallery/child__namaste.jpg" />
     <meta property="og:url" content="https://yourdomain.com/" />
     <meta property="og:type" content="website" />
 
 
-    <link rel="icon" href="img/logo/img.png" type="image/x-icon" />
-    <meta name="description" content="Nylsal Hostel empowers children from Nepal's remote Nyisal village by providing education, accommodation, and cultural preservation." />
-    <meta name="keywords" content="Nylsal Hostel, Nepal education, support children, Himalayan village, empower through education" />
-    <title>Nylsal Hostel – Empowering Himalayan Children Through Education</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/x-icon" />
+    <meta name="description" content="Nyisal Hostel empowers children from Nepal's remote Nyisal village by providing education, accommodation, and cultural preservation." />
+    <meta name="keywords" content="Nyisal Hostel, Nepal education, support children, Himalayan village, empower through education" />
+    <title>Nyisal Hostel – Empowering Himalayan Children Through Education</title>
 </head>
 <body>
-   <header>
+    <header>
         <div class="header-container container">
-        <div>
-            <a><img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px"></a>
+            <div>
+                <img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px">
+            </div>
+
+            <ul class="desktop-nav-lists">
+                <li><a href="index.html" class="desktop-nav-link">Home</a></li>
+                <li><a id="desktop-active" href="about.html" class="desktop-nav-link">About Us</a></li>
+                <li><a href="index.html#support" class="desktop-nav-link">Support Us</a></li>
+                <li><a href="gallery.html" class="desktop-nav-link">Gallery</a></li>
+                <li><a href="index.html#footer" class="desktop-nav-link">Contact Us</a></li>
+            </ul>
+
+            <button class="menu-btn btn-icon" id="menu-btn">
+                <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
+            </button>
         </div>
-
-        <ul class="desktop-nav-lists">
-            <li><a href="index.html" class="desktop-nav-link">Home</a></li>
-            <li><a id="desktop-active" href="about.html" class="desktop-nav-link">About Us</a></li>
-            <li><a href="index.html#support" class="desktop-nav-link">Support Us</a></li>
-            <li><a href="gallery.html" class="desktop-nav-link">Gallery</a></li>
-            <li><a href="index.html#footer" class="desktop-nav-link">Contact Us</a></li>
-        </ul>
-
-        <!-- <a href="#" class="desktop-download btn">Download CV</a> -->
-
-        <button class="menu-btn btn-icon" id="menu-btn">
-            <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
-        </button>
     </header>
 
-    <nav class="nav-menu" id="nav-menu">
+    <nav class="nav-menu" id="nav-menu" aria-label="Mobile Navigation Menu">
         <button class="close-btn btn-icon" id="close-btn">
             <img class="close-icon" id="close-icon" src="icons/close.svg" alt="close">
         </button>
@@ -54,12 +54,9 @@
             <li><a  href="index.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
             <li><a href="index.html#support" class="nav-link">Support Us</a></li>
-            <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li><a href="index.html#footer" class="nav-link">Contact Us</a></li>
         </ul>
-
-        <!-- <a href="#" class="download btn">Download CV</a>    -->
-        </div>
     </nav>
     
 
@@ -82,25 +79,109 @@
 
 
     <main>
-        <section class="introduction ">
+        <section class="introduction">
             <div class="introduction-container container">
 
 
                 <h2>Who we are?</h2>
-                <p>Nyisal Hostel is a transformative initiative established to provide continued education and cultural preservation for children from Nyisal village, one of Nepal's most remote and underserved communities. This proposal outlines the urgent need for your support to sustain and expand this initiative, which offers these children a pathway to education, empowerment, and the preservation of their unique Tibetan Buddhist heritage.</p>
-                <figure>
-                    <img src="img/gallery/NYISAL_VILLAGE.jpg" alt="Nyisal Village" width="100%" height="auto">
-                    <figcaption>NYISAL VILLAGE</figcaption>
-                </figure>
-                <p>Nyisal is a small Himalayan village located in the northwestern region of Nepal, on the border with Tibet (China). With a population of approximately 300, the community is deeply rooted in Tibetan Buddhist culture and traditions. The region is geographically isolated, situated beyond the Himalayas, with no road network, requiring 2–3 days of walking from the nearest road access point.</p>
-                <p>The people of Nyisal live in extremely limited conditions:</p>
+                <p><i><b><q>Empowering the Children of Nyisal for a Brighter Future</q></b></i></p>
+                <section>
+                    <h3>Introduction</h3>
 
-                <ul>
-                    <li>No access to quality health care</li>
-                    <li>Very limited educational infrastructure</li>
-                    <li>No electricity or internet</li>
-                    <li>No economic opportunities outside of traditional farming and cattle herding</li>
-                </ul>
+                    <p>Nyisal Hostel is a transformative initiative established to provide continued education and cultural preservation for children from Nyisal village, one of Nepal's most remote and underserved communities. This proposal outlines the urgent need for your support to sustain and expand this initiative, which offers these children a pathway to education, empowerment, and the preservation of their unique Tibetan Buddhist heritage.</p>
+                    <figure>
+                        <img src="img/gallery/NYISAL_VILLAGE.jpg" alt="Nyisal Village" width="100%" height="auto">
+                        <figcaption>NYISAL VILLAGE</figcaption>
+                    </figure>
+
+                    <h3>Background: About Nyisal Village</h3>
+                    <p>Nyisal is a small Himalayan village located in the northwestern region of Nepal, on the border with Tibet (China). With a population of approximately 300, the community is deeply rooted in Tibetan Buddhist culture and traditions. The region is geographically isolated, situated beyond the Himalayas, with no road network, requiring 2–3 days of walking from the nearest road access point.</p>
+                    <p>The people of Nyisal live in extremely limited conditions:</p>
+
+                    <ul>
+                        <li>No access to quality health care</li>
+                        <li>Very limited educational infrastructure</li>
+                        <li>No electricity or internet</li>
+                        <li>No economic opportunities outside of traditional farming and cattle herding</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>The Educational Challenge</h3>
+                    <p>Nyisal currently has only one primary school, run jointly by the Nepalese government and the
+                    organization HDI (Himalayan Development Initiative). While this provides basic education,
+                    children have no access to secondary or higher education within or near the village.</p>
+
+                    <p>As a result:</p>
+
+                    <ul>
+                        <li>Most children drop out after the primary level</li>
+                        <li>Early and child marriage is prevalent</li>
+                        <li>Young people are trapped in generational cycles of poverty and limited exposure</li>
+                        <li>Loss of indigenous knowledge and the traditional Tibetan language is increasing</li>
+                    </ul>
+
+                    <figure>
+                        <img src="img/gallery/childrens-reading.jpg" alt="Nyisal Village" width="100%" height="auto">
+                        <img src="img/gallery/school1.jpg" alt="Nyisal Village" width="100%" height="auto">
+                        <figcaption>Students are reading a book and Nyisal School</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h3>Our Initiative: Nyisal Hostel in Kathmandu</h3>
+
+                    <p>To address these challenges, we have established Nyisal Hostel in Kathmandu, the capital city of
+                    Nepal. This facility:</p>
+
+                    <ul>
+                        <li>Provides a safe and nurturing environment for children from Nyisal</li>
+                        <li>Allows them to continue their secondary and higher education in Kathmandu schools</li>
+                        <li>Preserves and teaches their Tibetan language, culture, and traditions</li>
+                        <li>Offers exposure to a wider world while grounding them in their identity</li>
+                    </ul>
+                    <p>Nyisal Hostel is not just a place to stay, but a home and learning center for children without
+                    access to education or opportunity.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Why We Need Your Support</h3>
+                    <p>Your generous donation will go directly towards:</p>
+
+                    <ul>
+                        <li>Daily food and nutrition for the children</li>
+                        <li>School fees, uniforms, books, and supplies.</li>
+                        <li>Cultural and language preservation programs.</li>
+                        <li>Health care and emotional support services.</li>
+                        <li>Hostel maintenance and rent.</li>
+                    </ul>
+
+                    <p>Your support can change the trajectory of a child’s life, not only lifting them out of poverty but
+                    also empowering them to preserve their unique heritage and contribute meaningfully to both
+                    their local and national communities.
+                    </p>
+
+                    <figure>
+                        <img src="img/gallery/mountain.jpg" alt="Nyisal Village" width="100%" height="auto">
+                        <figcaption>Five students from the early days of Nyisal Hostel proudly in uniforms and
+                        They represent the hostel’s first batch.
+                        </figcaption>
+                    </figure>
+                </section>
+
+
+                <section>
+                    <h3>A Call to Action</h3>
+                    <p>We invite you to join hands with us in this journey of hope, education, and cultural preservation.
+                    By supporting Nyisal Hostel, you are not only helping children learn and grow, but also helping
+                    sustain a precious Himalayan culture at risk of disappearing.</p>
+
+                    <p>Thank you for considering this heartfelt cause. Together, we can ensure that the children of Nyisal
+                    have the future they deserve.</p>
+                </section>
+
+                
             </div>
         </section>
     </main>
@@ -130,7 +211,9 @@
                 <div class="footer-content__logo">
                     <img src="img/logo/logo.png" alt="Logo" width="200px" height="200px">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla libero sapiente dignissimos, maiores, quo consequatur minima animi ex, in at facilis quis veniam incidunt debitis commodi. Sed quas ut fugit?</p>
+                <p>Nyisal Hostel is a transformative initiative established to provide continued education and cultural
+                preservation for children from Nyisal village, one of Nepal's most remote and underserved
+                communities.</p>
             </div>
             <div class="footer-section footer-links">
                 <ul>
@@ -141,27 +224,29 @@
                 </ul>
             </div>
             <div class="footer-section footer-contact">
-                <ul>
-                    <li><a href="index.html#gallery">Our Commitments</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Social Medias</a></li>
-                </ul>
-                <hr>
-                <div>
-                    <div style="font-size: 24px;">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <ul>
+                        <li><a href="#gallery">Our Commitments</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <p style="padding-bottom: 5px;">Social Media</p>
+                        <hr>
+                        <div style="font-size: 24px;">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>                        
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Epowring By Educating. All rights reserved.</p>
             </div>
         </div>   
     </footer>
-    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

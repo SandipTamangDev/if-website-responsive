@@ -3,63 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d1vn/DUz/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/variable.css">
 
-    <meta property="og:title" content="Nylsal Hostel – Empowering Himalayan Children Through Education" />
+    <meta name="theme-color" content="#fff" />
+
+    <meta property="og:title" content="Nyisal Hostel – Empowering Himalayan Children Through Education" />
     <meta property="og:description" content="Support education and cultural preservation for children in Nyisal, Nepal." />
     <meta property="og:image" content="https://yourdomain.com/img/gallery/child__namaste.jpg" />
     <meta property="og:url" content="https://yourdomain.com/" />
     <meta property="og:type" content="website" />
 
 
-    <link rel="icon" href="img/logo/img.png" type="image/x-icon" />
-    <meta name="description" content="Nylsal Hostel empowers children from Nepal's remote Nyisal village by providing education, accommodation, and cultural preservation." />
-    <meta name="keywords" content="Nylsal Hostel, Nepal education, support children, Himalayan village, empower through education" />
-    <title>Nylsal Hostel – Empowering Himalayan Children Through Education</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/x-icon" />
+    <meta name="description" content="Nyisal Hostel empowers children from Nepal's remote Nyisal village by providing education, accommodation, and cultural preservation." />
+    <meta name="keywords" content="Nyisal Hostel, Nepal education, support children, Himalayan village, empower through education" />
+    <title>Nyisal Hostel – Empowering Himalayan Children Through Education</title>
 </head>
 <body>
-   <header>
+    <header>
         <div class="header-container container">
-        <div>
-            <a><img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px"></a>
+            <div>
+                <img src="img/logo/logo.png" alt="Mylogo" width="50px" height="50px">
+            </div>
+
+            <ul class="desktop-nav-lists">
+                <li><a href="index.html" class="desktop-nav-link">Home</a></li>
+                <li><a href="about.html" class="desktop-nav-link">About Us</a></li>
+                <li><a href="index.html#support" class="desktop-nav-link">Support Us</a></li>
+                <li><a id="desktop-active" href="gallery.html" class="desktop-nav-link">Gallery</a></li>
+                <li><a href="index.html#footer" class="desktop-nav-link">Contact Us</a></li>
+            </ul>
+
+
+            <button class="menu-btn btn-icon" id="menu-btn">
+                <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
+            </button>
         </div>
-
-        <ul class="desktop-nav-lists">
-            <li><a href="index.html" class="desktop-nav-link">Home</a></li>
-            <li><a href="about.html" class="desktop-nav-link">About Us</a></li>
-            <li><a href="index.html#support" class="desktop-nav-link">Support Us</a></li>
-            <li><a id="desktop-active" href="gallery.html" class="desktop-nav-link">Gallery</a></li>
-            <li><a href="index.html#footer" class="desktop-nav-link">Contact Us</a></li>
-        </ul>
-
-        <!-- <a href="#" class="desktop-download btn">Download CV</a> -->
-
-        <button class="menu-btn btn-icon" id="menu-btn">
-            <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
-        </button>
     </header>
 
-    <nav class="nav-menu" id="nav-menu">
+    <nav class="nav-menu" id="nav-menu" aria-label="Mobile Navigation Menu">
         <button class="close-btn btn-icon" id="close-btn">
             <img class="close-icon" id="close-icon" src="icons/close.svg" alt="close">
         </button>
 
         <ul class="nav-lists">
             <li><a  href="index.html" class="nav-link">Home</a></li>
-            <li><a href="index.html#about" class="nav-link">About Us</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
             <li><a href="index.html#support" class="nav-link">Support Us</a></li>
             <li><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li><a href="index.html#footer" class="nav-link">Contact Us</a></li>
         </ul>
-
-        <!-- <a href="#" class="download btn">Download CV</a>    -->
-        </div>
     </nav>
 
 
@@ -170,27 +168,29 @@
                 </ul>
             </div>
             <div class="footer-section footer-contact">
-                <ul>
-                    <li><a href="index.html#gallery">Our Commitments</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Social Medias</a></li>
-                </ul>
-                <hr>
-                <div>
-                    <div style="font-size: 24px;">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <ul>
+                        <li><a href="#gallery">Our Commitments</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Social Medias</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <hr>
+                        <div style="font-size: 24px;">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></i></a></li>
+                            </ul>                        
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Epowring By Educating. All rights reserved.</p>
+                <p>&copy; 2025 Empowering By Educating. All rights reserved.</p>
             </div>
-        </div>   
+        </div>
     </footer>
-    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
