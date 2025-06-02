@@ -41,6 +41,7 @@ body {
 
 h1 {
   font-size: var(--font-xl);
+  margin-top: 0;
 }
 
 h2 {

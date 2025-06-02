@@ -4,7 +4,7 @@ main{
     z-index: 50;
 }
 
-.hero, .about, .support, .commitments {
+.hero .about, .support, .commitments {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,33 +20,44 @@ main{
 
 
 
-/* hero */
+
+
 .hero {
-    background-image: url('../img/gallery/school1.jpg'); /* or .jpg/.jpeg based on your file */
+    position: relative;
+    background-image: url('../img/gallery/school1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: clamp(580px, 50vw, 630px); /* Responsive height */
+    height: clamp(580px, 50vw, 630px);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 20px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Soft dark overlay */
+    z-index: 1;
+}
+
+.center-img {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 
-.hero h1 {
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
-    padding: 20px;
-    color: black;
-}
 
-.hero-container {
-    width: clamp(350px, 60vw, 780px);
-    background-color: var(--secondary-color);
-    opacity: 0.8;
-}
+
+
+
 
 
 /* about */
@@ -70,7 +81,7 @@ main{
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column-reverse;
     justify-content: space-between;
 }
@@ -94,6 +105,8 @@ main{
 .about__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: justify;
     gap: 20px;
     padding: 20px;
@@ -199,13 +212,13 @@ main{
         font-size: 16px;
         line-height: 1.5;
         color: #333;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         text-align: center;
     }
 
     .commitments h3 {
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
     }
 
     .commitments img {
@@ -221,6 +234,10 @@ main{
         justify-content: center;
     }
 
+    .commitments-container a {
+        color: var(--primary-color)
+    }
+
     .commitments__card {
         text-align: center;
         max-width: 310px;
@@ -230,7 +247,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 20px;
     }
 
     @media (min-width: 768px) {
@@ -291,7 +308,7 @@ footer p, footer a {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    flex: 2;
+    flex-grow: 1;
 }
 
 .footer-contact img {
@@ -307,6 +324,10 @@ footer p, footer a {
     margin-top: 10px;
 }
 
+.footer-about p {
+    text-align: justify;
+}
+
 .footer-bottom {
     background-color: var(--primary-color);
     color: #fff;
@@ -318,10 +339,6 @@ footer p, footer a {
     .footer-top {
         flex-direction: row;
         align-items: flex-start;
-    }
-
-    .footer-about p {
-        text-align: justify;
     }
 
     .footer-about {
