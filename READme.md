@@ -17,7 +17,7 @@ This is a solution for creating a clean, modern, and responsive CSS stylesheet. 
 
 ### Screenshot
 
-![](../screenshot.png)
+![](img/screenshot.png)
 
 ### Links
 
