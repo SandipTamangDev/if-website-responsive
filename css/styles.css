@@ -493,19 +493,23 @@ footer p, footer a {
 /* 👇 Add this to team-container */
 .team-container {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 0 1px;
-  scroll-padding: 10px;
+  padding: 0 16px;
+  scroll-padding: 16px;
   -webkit-overflow-scrolling: touch;
+  white-space: nowrap; /* 👈 Helps iOS handle scrolling better */
 }
+
 
 /* 👇 Update this part for mobile card sizing */
 .team__card {
-  min-width: 80%; /* 👈 Only show 1 full card + part of the next */
+  display: inline-block; /* 👈 Helps white-space: nowrap */
+  min-width: 80%;
   max-width: 80%;
-  flex: 0 0 auto;
+  vertical-align: top;
+  white-space: normal; /* allow wrapping inside the card */
   scroll-snap-align: start;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 16px;
@@ -513,6 +517,7 @@ footer p, footer a {
   text-align: center;
   transition: transform 0.2s;
 }
+
 
 .team__card:hover {
   transform: scale(1.03);
