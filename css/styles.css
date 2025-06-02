@@ -21,7 +21,7 @@ main{
 
 /* hero */
 .hero {
-    background-image: url('../img/gallery/hero-background.jpg'); /* or .jpg/.jpeg based on your file */
+    background-image: url('../img/gallery/school1.jpg'); /* or .jpg/.jpeg based on your file */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
