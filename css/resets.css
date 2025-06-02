@@ -25,7 +25,8 @@
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 body, html {

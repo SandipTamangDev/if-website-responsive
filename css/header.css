@@ -40,8 +40,8 @@ header {
 
 .close-btn {
     position: absolute;
-    top: 18.5px;
-    right: 29px;
+    top: 15px;
+    right: 20px;
 }
 
 .nav-menu.active {
@@ -59,6 +59,7 @@ header {
 }
 
 .nav-lists a {
+    font-size: var(--font-md);
     color:#333;
 }
 
@@ -87,6 +88,13 @@ header {
 .desktop-nav-link:hover {
     color: #333; /* hover effect just for nav links */
 }
+
+/* Lock scroll when this class is added */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* optional to prevent weird iOS bounce */
+}
+
 
 
 @media (min-width: 768px) {
