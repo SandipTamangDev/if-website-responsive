@@ -557,7 +557,6 @@ footer p, footer a {
   }
 
   .team__card {
-    min-width: 200px;
     max-width: 300px;
     flex: 1 1 18%;
   }
