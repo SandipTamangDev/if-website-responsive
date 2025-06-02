@@ -5,3 +5,17 @@
     --button-color: #2667B2;
     --button-hover-color: #1e57a0;
 }
+
+:root {
+  /* Responsive font sizing using clamp(min, preferred, max) */
+  --font-xs: clamp(0.75rem, 0.72rem + 0.2vw, 0.875rem); /* small labels, notes */
+  --font-sm: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);     /* input fields, form texts */
+  --font-base: clamp(1rem, 0.9rem + 0.6vw, 1.25rem);     /* base body text */
+  --font-md: clamp(1.125rem, 1rem + 0.8vw, 1.5rem);      /* subheadings */
+  --font-lg: clamp(1.5rem, 1.2rem + 1vw, 2rem);          /* headings */
+  --font-xl: clamp(2rem, 1.8rem + 1.5vw, 3rem);          /* page title */
+
+  /* Optional: line heights for better vertical rhythm */
+  --line-height-base: 1.5;
+  --line-height-tight: 1.25;
+}

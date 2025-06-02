@@ -15,7 +15,7 @@ main{
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
 }
 
 
@@ -37,13 +37,13 @@ main{
 
 
 .hero h1 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
     padding: 20px;
     color: black;
 }
 
 .hero-container {
-    width: clamp(350px, 50vw, 750px);
+    width: clamp(350px, 60vw, 780px);
     background-color: var(--secondary-color);
     opacity: 0.8;
 }
@@ -53,6 +53,20 @@ main{
 .about {
     background-color: var(--secondary-color);
 }
+
+.about h2 {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
 
 .about-container {
     display: flex;
@@ -96,7 +110,7 @@ main{
         font-size: 16px;
         line-height: 1.5;
         color: #333;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         text-align: justify
 }
 }
@@ -104,6 +118,18 @@ main{
 /* support */   
 .support {
     background-color: var(--primary-color);
+}
+.support h2 {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.support p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: justify
 }
 
 .support-container {
@@ -143,7 +169,7 @@ main{
         font-size: 16px;
         line-height: 1.5;
         color: #333;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         text-align: justify
     }
 
@@ -162,6 +188,24 @@ main{
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
+    }
+
+    .commitments h2 {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .commitments p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .commitments h3 {
+        text-align: center;
+        margin-bottom: 8px;
     }
 
     .commitments img {
@@ -186,7 +230,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 8px;
     }
 
     @media (min-width: 768px) {
@@ -310,6 +354,18 @@ footer p, footer a {
     text-align: center;
 }
 
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+.gallery figcaption {
+    color: #333;    
+    margin: 8px 0 20px 0;
+    text-align: center;
+}
+
 .gallery-container {
     display: flex;
     flex-direction: column;
@@ -317,9 +373,9 @@ footer p, footer a {
     gap: 20px;
 }
 
-.gallery-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.gallery h2 {
+    text-align: left;
+    margin-bottom: 16px;
 }
 
 .gallery-grid {
@@ -331,6 +387,44 @@ footer p, footer a {
 
 
 /* introduction section */
+.introduction h2 {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.introduction p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.introduction img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+.introduction figcaption {
+    font-size: 14px;
+    color: #666;    
+    margin: 8px 0 20px 0;
+    text-align: center;
+}
+
+.introduction h3 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.introduction li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left;
+}
 
 .introduction {
     background-color: var(--secondary-color);
@@ -338,17 +432,9 @@ footer p, footer a {
     min-height: 100vh;
 }
 
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    text-align: justify;
-}
 
 .introduction-container ul {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 .introduction-container ul li {
     list-style-type: disc;
