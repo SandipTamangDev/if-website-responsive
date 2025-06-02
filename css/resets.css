@@ -9,7 +9,7 @@
 /* for button */
 .btn {
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     border-radius: 10px;
     background-color: var(--button-color);
@@ -43,7 +43,7 @@ body, html {
 
 
 body {
-    font-family: "MyCustomFont", sans-serif;
+    font-family: "Outfit", sans-serif;
     background-color: var(--secondary-color);
 }
 
@@ -61,6 +61,10 @@ h3 {
   font-size: var(--font-md);
 }
 
+
+h1, h2, h3, h4 {
+  font-family: "MyCustomFont", sans-serif;
+}
 
 
 
