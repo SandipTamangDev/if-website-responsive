@@ -4,7 +4,7 @@ main{
     z-index: 50;
 }
 
-.hero .about, .support, .commitments {
+.hero .about, .support, .commitments, .team, .footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,35 +23,41 @@ main{
 
 
 .hero {
-    position: relative; /* Needed for absolutely positioned filter inside */
+    position: relative;
     background-image: url('../img/gallery/school1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: clamp(530px, 50vw, 630px);
+    height: clamp(580px, 50vw, 620px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    text-align: center;
     overflow: hidden;
 }
 
-.filter {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+    background-color: rgba(0, 0, 0, 0.4); /* Soft dark overlay */
     z-index: 1;
 }
 
-.filter img {
-    position: relative; /* makes sure it stacks above the overlay */
+.center-img {
+    position: relative;
     z-index: 2;
     max-width: 100%;
+    margin-top: 50px;
     height: auto;
     object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .center-img {
+        margin-top: 0;
+    }
 }
 
 
@@ -68,7 +74,7 @@ main{
 
 .about h2 {
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .about p {
@@ -475,99 +481,97 @@ footer p, footer a {
 
 
 .team {
-  background-color: var(--primary-color);
-  padding-bottom: 40px;
-  overflow: hidden;
-}
-
-.team h4,
-.team h2 {
-  text-align: left;
-  color: #fff;
-  margin: 8px 0;
-}
-
-.team h2 {
-  color: #AAD5F2;
-}
-
-/* 👇 Add this to team-container */
-.team-container {
-  display: flex;
-  /* gap: 16px; */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 0 16px;
-  scroll-padding: 16px;
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap; /* 👈 Helps iOS handle scrolling better */
-}
-
-
-/* 👇 Update this part for mobile card sizing */
-.team__card {
-  display: inline-block; /* 👈 Helps white-space: nowrap */
-  min-width: 80%;
-  max-width: 80%;
-  vertical-align: top;
-  white-space: normal; /* allow wrapping inside the card */
-  scroll-snap-align: start;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 16px;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.2s;
-}
-
-.team-container > .team__card:first-child {
-  margin-left: 0; /* or a smaller value like 8px */
-}
-
-
-.team__card:hover {
-  transform: scale(1.03);
-}
-
-.team img {
-  max-width: 200px;
-  min-width: 200px;
-  border-radius: 5px;
-}
-
-.team h3 {
-  margin-bottom: 4px;
-  color: #fff;
+    background-color: var(--primary-color);
+    padding: 20px;
+    flex-direction: column;
 }
 
 .team p {
-  font-size: 16px;
-  color: #ddd;
-  margin-bottom: 4px;
+    font-size: var(--font-base);
+    line-height: 1.5;
+    color: var(--text-color);
 }
 
-.team a {
-  color: #AAD5F2;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 8px;
-  transition: transform 0.2s ease;
+.team .subtitle {
+    font-size: var(--font-xs);
+    color: #f4f4f4;
 }
 
-.team a:hover {
-  transform: translateX(4px);
+.team h2 {
+    font-size: var(--font-lg);
+    text-align: left;
+    margin-bottom: 16px;
+    color: #AAD5F2;
 }
 
-/* Desktop view: Show all cards, no scroll */
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
+}
+
+.team__card {
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    max-width: 150px;
+    min-width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.team__card h3 {
+    font-size: var(--font-md);
+    color: var(--text-color-white);
+    margin-bottom: 4px;
+}
+
+.team__card p {
+    font-size: var(--font-xs);
+    color: var(--text-color-white);
+    margin-bottom: 4px;
+}
+
+.team__card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.team__card {
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .team-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .team__card {
+        flex: 0 0 30%;
+        max-width: 200px;
+    }
+}
+
 @media (min-width: 1440px) {
-  .team-container {
-    overflow-x: visible;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .team-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 
-  .team__card {
-    max-width: 300px;
-    flex: 1 1 18%;
-  }
+    .team__card {
+        flex: 0 0 30%;
+        max-width: 200px;
+    }
 }
