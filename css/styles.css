@@ -24,6 +24,17 @@
 /* =================================================================== */
 
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 
 
@@ -98,19 +109,21 @@ body {
 
 h1 {
     font-size: var(--font-xl);
-    margin-top: 0;
 }
 
 h2 {
     font-size: var(--font-lg);
+    margin-bottom: 16px;
+
 }
 
 h3 {
     font-size: var(--font-md);
+    margin-bottom: 8px;
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: "MyCustomFont", sans-serif;
 }
 
@@ -343,11 +356,10 @@ main{
 
 .about h2 {
     text-align: left;
-    margin-bottom: 8px;
+
 }
 
 .about p {
-    font-size: 14px;
     line-height: 1.5;
     color: #333;
     margin-bottom: 8px;
@@ -430,7 +442,6 @@ main{
 }
 .support h2 {
     text-align: left;
-    margin-bottom: 16px;
 }
 
 .support p {
@@ -519,7 +530,6 @@ main{
 
     .commitments h2 {
         text-align: center;
-        margin-bottom: 16px;
     }
 
     .commitments p {
@@ -532,7 +542,6 @@ main{
 
     .commitments h3 {
         text-align: center;
-        margin-bottom: 4px;
     }
 
     .commitments img {
@@ -757,7 +766,6 @@ footer p, footer a {
 
 .gallery h2 {
     text-align: left;
-    margin-bottom: 16px;
 }
 
 .gallery-grid {
@@ -797,13 +805,10 @@ footer p, footer a {
 /* introduction section */
 .introduction h2 {
     text-align: left;
-    margin-bottom: 16px;
 }
 
 .introduction h3 {
     text-align: left;
-    margin-bottom: 8px;
-    margin-top: 20px;
 }
 
 .introduction p {
@@ -895,7 +900,6 @@ footer p, footer a {
 .team h2 {
     font-size: var(--font-lg);
     text-align: left;
-    margin-bottom: 16px;
     color: #AAD5F2;
 }
 
@@ -925,7 +929,6 @@ footer p, footer a {
 .team__card h3 {
     font-size: var(--font-md);
     color: var(--text-color-white);
-    margin-bottom: 4px;
 }
 
 .team__card p {
