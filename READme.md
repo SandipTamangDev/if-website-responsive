@@ -12,6 +12,7 @@ This is a solution for creating a clean, modern, and responsive CSS stylesheet. 
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -50,8 +51,6 @@ If you have feedback or want to collab on improvements, hit me up — I’m alwa
 
 ### Useful resources
 
-- [CSS Tricks - clamp() for font sizes](https://css-tricks.com/snippets/css/fluid-responsive-text/) — Helped me understand how to use `clamp()` properly for responsive typography.  
-- [MDN CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) — Great reference for CSS custom properties, which made theming a breeze.  
 - [Frontend Mentor](https://www.frontendmentor.io/) — The inspiration behind building projects with real-world designs to level up my frontend skills.  
 - [CSS Transitions for Beginners](https://www.w3schools.com/css/css3_transitions.asp) — Useful for creating smooth animations and transitions without going overboard.
 
@@ -59,4 +58,8 @@ If you have feedback or want to collab on improvements, hit me up — I’m alwa
 
 - Website - [Sandip Tamang](https://www.tamangsandip.com.np)  
 - GitHub - [SandipTamang](https://github.com/yetithesleepingchancellor)  
-- Frontend Mentor - [@YetiTheSleepingChancellor](https://www.frontendmentor.io/profile/YetiTheSleepingChancellor)  
+- Frontend Mentor - [@YetiTheSleepingChancellor](https://www.frontendmentor.io/profile/YetiTheSleepingChancellor)
+
+## Acknowledgments
+
+Big thanks to [Tenzin Dundul](https://github.com/tenzindundul) for contributing to the design direction of this website. Their input and shared design concept helped shape the visual foundation of the project.
