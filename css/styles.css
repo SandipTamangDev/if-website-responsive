@@ -94,7 +94,7 @@ body, html {
 }
 
 @font-face {
-    font-family: 'MyCustomFont';
+    font-family: 'MyCustomFont' sans-serif;
     src: url('../fonts/AlbraTRIAL-Semi.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
