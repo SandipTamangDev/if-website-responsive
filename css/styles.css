@@ -18,22 +18,22 @@
   --font-xl: clamp(2rem, 1.8rem + 1.5vw, 3rem);          /* page title */
 
   /* Optional: line heights for better vertical rhythm */
-  --line-height-base: 1.5;
-  --line-height-tight: 1.25;
+    --line-height-base: 1.5;
+    --line-height-tight: 1.25;
 }
 /* =================================================================== */
 
 
 .visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 
@@ -911,7 +911,7 @@ footer p, footer a {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 20px;
+    padding: 20px 100px;
 }
 
 .team__card {
@@ -927,7 +927,7 @@ footer p, footer a {
 }
 
 .team__card h3 {
-    font-size: var(--font-md);
+    font-size: 1rem;
     color: var(--text-color-white);
 }
 
@@ -952,8 +952,11 @@ footer p, footer a {
 @media (min-width: 768px) {
     .team-container {
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow-x: unset;
+        justify-content: none;
+        align-items: center;
+        scroll-snap-type: none;
     }
 
     .team__card {
@@ -962,15 +965,3 @@ footer p, footer a {
     }
 }
 
-@media (min-width: 1440px) {
-    .team-container {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .team__card {
-        flex: 0 0 30%;
-        max-width: 200px;
-    }
-}
