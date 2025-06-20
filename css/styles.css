@@ -121,7 +121,7 @@ h2 {
 
 h3 {
     font-size: var(--font-md);
-    margin-bottom: 8px;
+    margin: 16px 0;
 }
 
 
@@ -563,7 +563,8 @@ main{
     }
 
 .commitments img {
-    width: 300px;         /* or 100% if you want responsive */
+    width: 300px;
+    min-width: 100px;         /* or 100% if you want responsive */
     height: 200px;        /* fixed height needed for object-fit */
     border-radius: 5px;
     display: block;
@@ -575,7 +576,7 @@ main{
     .commitments-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         align-items: center;
         justify-content: center;
     }
@@ -596,7 +597,7 @@ main{
         gap: 20px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         .commitments-container {
             flex-direction: row;
         }
