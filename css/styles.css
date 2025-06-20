@@ -763,11 +763,6 @@ footer p, footer a {
     text-align: center;
 }
 
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0 0 0;
-}
 
 .gallery figcaption {
     color: #333;    
@@ -791,6 +786,24 @@ footer p, footer a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+
+.gallery-item figure {
+    margin: 0; /* reset figure margin if needed */
+}
+
+.gallery-item img {
+    width: 100%;    /* image fills the grid cell width */
+    height: auto;   /* maintain aspect ratio */
+    display: block; /* remove inline gap */
+    margin: 0;      /* no margin around images */
+}
+
+.gallery-item figcaption {
+    margin: 8px 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
 
 
 
