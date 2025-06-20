@@ -195,8 +195,17 @@ header {
 }
 
 .nav-lists a {
+    display: block;
+    width: 100%;
     font-size: var(--font-md);
     color:#333;
+    padding: 10px 20px;
+}
+
+.nav-lists a:hover {
+    color:#333;
+    background-color: var(--text-color-white);
+    padding: 10px 20px;
 }
 
 .desktop-nav-lists ul li {
