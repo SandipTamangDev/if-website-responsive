@@ -25,40 +25,40 @@
     <title>Nyisal Hostel – Empowering Himalayan Children Through Education</title>
 </head>
 <body>
-    <header>
+<header>
         <div class="header-container container">
             <div>
                 <img src="img/logo/logo.webp" alt="Mylogo" width="50px" height="50px" loading="lazy">
             </div>
 
             <ul class="desktop-nav-lists">
-                <li><a href="index.html" class="desktop-nav-link">Home</a></li>
-                <li><a id="desktop-active" href="about.html" class="desktop-nav-link">About Us</a></li>
-                <li><a href="index.html#support" class="desktop-nav-link">Support Us</a></li>
-                <li><a href="gallery.html" class="desktop-nav-link">Gallery</a></li>
-                <li><a href="index.html#support" class="desktop-nav-link">Contact Us</a></li>
+                <li><a href="index.html" class="desktop-nav-link" aria-label="Go to Home page">Home</a></li>
+                <li><a id="desktop-active" href="about.html" class="desktop-nav-link" aria-label="Learn more About Us">About Us</a></li>
+                <li><a href="index.html#support" class="desktop-nav-link" aria-label="Support our mission">Support Us</a></li>
+                <li><a href="gallery.html" class="desktop-nav-link" aria-label="View our Gallery">Gallery</a></li>
+                <li><a href="index.html#support" class="desktop-nav-link" aria-label="Contact us for more information">Contact Us</a></li>
             </ul>
 
-            <button class="menu-btn btn-icon" id="menu-btn">
+            <button class="menu-btn btn-icon" id="menu-btn" aria-label="Open mobile menu">
                 <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
             </button>
         </div>
     </header>
 
     <nav class="nav-menu" id="nav-menu" aria-label="Mobile Navigation Menu">
-        <button class="close-btn btn-icon" id="close-btn">
+        <button class="close-btn btn-icon" id="close-btn" aria-label="Close mobile menu">
             <img class="close-icon" id="close-icon" src="icons/close.svg" alt="close" loading="lazy">
         </button>
 
         <ul class="nav-lists">
-            <li><a  href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About Us</a></li>
-            <li><a href="index.html#support" class="nav-link">Support Us</a></li>
-            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="index.html#support" class="nav-link">Contact Us</a></li>
+            <li><a href="index.html" class="nav-link" aria-label="Go to Home page">Home</a></li>
+            <li><a href="about.html" class="nav-link" aria-label="Learn more About Us">About Us</a></li>
+            <li><a href="index.html#support" class="nav-link" aria-label="Support our mission">Support Us</a></li>
+            <li><a href="gallery.html" class="nav-link" aria-label="View our Gallery">Gallery</a></li>
+            <li><a href="index.html#support" class="nav-link" aria-label="Contact us for more information">Contact Us</a></li>
         </ul>
     </nav>
-    
+
 
 
 
@@ -203,10 +203,10 @@
 
 
 
-    <footer id="footer">
-        <div class="footer-container container">
-            <div class="footer-top">
-                <div class="footer-section footer-about">
+<footer id="footer">
+    <div class="footer-container container">
+        <div class="footer-top">
+            <div class="footer-section footer-about">
                 <div class="footer-content__logo">
                     <img src="img/logo/logo.webp" alt="Logo" width="200px" height="200px" loading="lazy">
                 </div>
@@ -216,36 +216,40 @@
             </div>
             <div class="footer-section footer-links">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#support">Support Us</a></li>
-                    <li><a href="index.html#support">Contact Us</a></li>
-                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+                    <li><a href="index.html#support" aria-label="Support our mission">Support Us</a></li>
+                    <li><a href="index.html#support" aria-label="Contact us for more information">Contact Us</a></li>
+                    <li><a href="index.html#gallery" aria-label="View our Gallery">Gallery</a></li>
                 </ul>
             </div>
             <div class="footer-section footer-contact">
-                    <ul>
-                        <li><a href="#gallery">Our Commitments</a></li>
-                        <li><a href="#">Blogs</a></li>
-                    </ul>
-                    <div class="footer-social">
-                        <p style="padding-bottom: 5px;">Social Media</p>
-                        <hr>
-                        <div style="font-size: 24px;">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>                        
-                        </div>
+                <ul>
+                    <li><a href="#gallery" aria-label="Learn about Our Commitments">Our Commitments</a></li>
+                    <li><a href="#" aria-label="Read our Blogs">Blogs</a></li>
+                </ul>
+                <div class="footer-social">
+                    <p style="padding-bottom: 5px;">Social Media</p>
+                    <hr>
+                    <div style="font-size: 24px;">
+                        <ul>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>                        
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Epowring By Educating. All rights reserved.</p>
-            </div>
-        </div>   
-    </footer>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Empowering By Educating. All rights reserved.</p>
+        </div>
+    </div>   
+</footer>
+
+
+
+
     <script src="js/main.js"></script>
 </body>
 </html>
