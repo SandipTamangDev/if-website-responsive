@@ -304,43 +304,45 @@ main{
 
 
 
-.hero {
+    .hero {
     position: relative;
-    background-image: url('../img/gallery/image\ \(13\)_result.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: clamp(580px, 50vw, 620px);
     display: flex;
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
-}
+    }
 
-.overlay {
+    .hero-bg-img {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Soft dark overlay */
-    z-index: 1;
-}
+    object-fit: cover;
+    z-index: 0;
+    }
 
-.center-img {
+    .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    }
+
+    .center-img {
     position: relative;
     z-index: 2;
     max-width: 100%;
     margin-top: 50px;
     height: auto;
     object-fit: contain;
-}
+    }
 
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
     .center-img {
         margin-top: 0;
     }
-}
+    }
 
 
 

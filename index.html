@@ -23,6 +23,8 @@
     <meta name="description" content="Nyisal Hostel empowers children from Nepal's remote Nyisal village by providing education, accommodation, and cultural preservation." />
     <meta name="keywords" content="Nyisal Hostel, Nepal education, support children, Himalayan village, empower through education" />
     <title>Nyisal Hostel – Empowering Himalayan Children Through Education</title>
+
+    <link rel="preload" as="image" href="img/gallery/image (13)_result.webp" type="image/webp">
 </head>
 <body>
     <header>
@@ -62,10 +64,30 @@
     
     <main>
         <section class="hero" id="hero">
-            <div class="overlay"></div>
-            <h1 class="visually-hidden">Nyisal Hostel – Empowering Himalayan Children Through Education</h1>
-            <img class="center-img" src="img/gallery/image (1).png" alt="Empower through education image">
+        <!-- Replace CSS background with this image -->
+        <img 
+            class="hero-bg-img" 
+            src="img/gallery/image (13)_result.webp" 
+            alt="Background of Nyisal Hostel" 
+            fetchpriority="high" 
+            decoding="async" 
+            loading="eager" 
+            width="1600" 
+            height="800"
+        >
+
+        <div class="overlay"></div>
+
+        <h1 class="visually-hidden">Nyisal Hostel – Empowering Himalayan Children Through Education</h1>
+        
+        <!-- Your center content image stays -->
+        <img 
+            class="center-img" 
+            src="img/gallery/image (1).png" 
+            alt="Empower through education image"
+        >
         </section>
+
 
 
 
