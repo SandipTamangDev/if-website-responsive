@@ -213,16 +213,21 @@ header {
 
 #desktop-active {
     color: #333;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
 }
 
 .desktop-nav-link {
-    color: grey; /* or your default color */
+    color: #333; /* or your default color */
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 10px 20px;
 }
 
 .desktop-nav-link:hover {
     color: #333; /* hover effect just for nav links */
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
 }
 
 /* Lock scroll when this class is added */
@@ -244,7 +249,7 @@ header {
 
     .desktop-nav-lists {
         display: flex;
-        gap: 20px;
+        gap: 5px;
     }
 }
 
