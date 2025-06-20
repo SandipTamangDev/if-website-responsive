@@ -24,7 +24,8 @@
     <meta name="keywords" content="Nyisal Hostel, Nepal education, support children, Himalayan village, empower through education" />
     <title>Nyisal Hostel – Empowering Himalayan Children Through Education</title>
 
-    <link rel="preload" as="image" href="img/main/main (1).webp" type="image/webp">
+    <link rel="preload" as="image" href="img/main/main_1.webp" type="image/webp">
+    <link rel="preload" as="image" href="img/main/main_mobile/mobile_main_1.webp" type="image/webp">
 </head>
 <body>
 <header>
@@ -67,14 +68,20 @@
         <!-- Replace CSS background with this image -->
         <img 
             class="hero-bg-img" 
-            src="img/main/main (1).webp"
+            src="img/main/main1.webp"
+            srcset="
+                img/main/main_mobile/mobile_main_1.webp 768w,
+                img/main/main_1.webp 1600w
+            "
+            sizes="(max-width: 768px) 100vw, 1600px"
             alt="Background of Nyisal Hostel" 
             fetchpriority="high" 
             decoding="async" 
             loading="eager" 
             width="1600" 
             height="800"
-        >
+        />
+
 
         <div class="overlay"></div>
 
