@@ -562,10 +562,15 @@ main{
         text-align: center;
     }
 
-    .commitments img {
-        max-width: 100%;
-        border-radius: 5px;
-    }
+.commitments img {
+    width: 300px;         /* or 100% if you want responsive */
+    height: 200px;        /* fixed height needed for object-fit */
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+}
+
 
     .commitments-container {
         display: flex;
@@ -792,11 +797,13 @@ footer p, footer a {
 }
 
 .gallery-item img {
-    width: 100%;    /* image fills the grid cell width */
-    height: auto;   /* maintain aspect ratio */
-    display: block; /* remove inline gap */
-    margin: 0;      /* no margin around images */
+    width: 100%;
+    height: 300px; /* pick a height that works for your design */
+    object-fit: cover;
+    display: block;
+    margin: 0;
 }
+
 
 .gallery-item figcaption {
     margin: 8px 0 20px 0;
