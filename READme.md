@@ -1,7 +1,5 @@
 # Responsive CSS Stylesheet Project
 
-This is a solution for creating a clean, modern, and responsive CSS stylesheet. The goal was to build a fully responsive layout using CSS variables, clamp-based typography, and smooth mobile navigation — all with a focus on maintainability and scalability.
-
 ## Table of contents
 
 - [Overview](#overview)
