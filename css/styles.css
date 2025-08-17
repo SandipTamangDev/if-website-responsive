@@ -719,6 +719,11 @@ main{
     gap: 1em;
 }
 
+.commitments__card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 @media (min-width: 768px) {
     .commitments__container {
         flex-direction: row;
