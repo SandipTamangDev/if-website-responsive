@@ -472,8 +472,6 @@ main{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-
 @media (min-width: 768px) {
 
     .about__read-more {
@@ -483,17 +481,19 @@ main{
     }
 
     .about__section:hover {
-        transform: translate(0, -5px);
-        transition: 0.3s ease-in-out;
+        transform: translateY(-5px);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .about__read-more:hover {
-        transform: translate(0, -5px);
-        transition: 0.3s ease-in-out;
+        transform: translateY(-5px);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .about {
-        max-height: 550px;
+        max-height: 560px;
         min-height: 550px;
     }
 
@@ -597,6 +597,9 @@ main{
 
 .support__content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .support__img {
@@ -632,7 +635,7 @@ main{
 @media (min-width: 768px) {
     .support__section {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 2em;
     }
 
@@ -650,12 +653,6 @@ main{
     }
 
 }
-
-
-
-
-
-
 
 
 
@@ -702,8 +699,12 @@ main{
     justify-content: center;
 }
 
-.commitments-container a {
+.commitments__card a {
     color: var(--primary-color)
+}
+
+.commitments__card a:hover {
+    border-bottom: 2px solid #333;
 }
 
 .commitments__card {
@@ -791,8 +792,13 @@ footer p, footer a {
     flex: 1;
 }
 
+.footer-links a:hover {
+    border-bottom: 2px solid #E7F6FD;
+}
+
 .footer-links ul li, .footer-contact ul li {
     padding-bottom: 10px;
+    line-height: 1.5;
 }
 
 .footer-top {
@@ -800,6 +806,14 @@ footer p, footer a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.footer__contact--list {
+    margin-bottom: 5px;
+}
+
+.footer__contact--list a:hover {
+    border-bottom: 2px solid #E7F6FD;
 }
 
 .footer-about {
@@ -833,6 +847,31 @@ footer p, footer a {
     padding: 10px 0;
     text-align: center;
 }
+
+
+.footer-social ul li a {
+    color: #fff; /* default grey */
+    transition: color 0.3s ease;
+    font-size: 24px;
+}
+
+/* Hover colors */
+.footer-social ul li a:hover .fa-facebook-f {
+  color: #1877f2; /* Facebook blue */
+}
+
+.footer-social ul li a:hover .fa-x-twitter {
+  color: #000000; /* Twitter (X) black */
+}
+
+.footer-social ul li a:hover .fa-instagram {
+  color: #e1306c; /* Instagram pink */
+}
+
+.footer-social ul li a:hover .fa-youtube {
+  color: #ff0000; /* YouTube red */
+}
+
 
 @media (min-width: 768px) {
     .footer-top {
@@ -933,14 +972,13 @@ footer p, footer a {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
+/* @media (min-width: 768px) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+} */
 
 
 
@@ -1084,6 +1122,11 @@ footer p, footer a {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.team__card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
 }
 
 .team__card h3 {
