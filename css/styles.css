@@ -378,12 +378,12 @@ main{
     z-index: 0;
 }
 
-.overlay {
+/* .overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
-}
+} */
 
 .center-img {
     position: relative;
