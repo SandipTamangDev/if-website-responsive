@@ -1022,8 +1022,14 @@ footer p, footer a {
     text-align: justify;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .introduction img {
-    max-width: 100%;
+    max-width: 100%;;
     height: auto;
     margin: 20px 0 0 0;
 }
@@ -1060,6 +1066,13 @@ footer p, footer a {
 }
 
 
+@media (min-width: 768px) {
+    .introduction img {
+        max-width: 50%;
+        height: auto;
+        margin: 20px 0 0 0;
+    }
+}
 
 
 
