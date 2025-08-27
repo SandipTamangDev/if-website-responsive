@@ -50,8 +50,8 @@
 
 
 /* Defaults */
-p {
-    font-size: 1em;
+p, li {
+    font-size: var(--font-sm);
     line-height: 1.5;
     color: #333;
     margin-bottom: 8px;
@@ -346,7 +346,7 @@ main{
     z-index: 50;
 }
 
-.hero, .about, .support, .commitments, .team, .footer {
+.hero, .about, .support, .commitments, .team, .footer, .education, .gallery, .accommodation {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -673,7 +673,7 @@ main{
 }
 
 .commitments p {
-    text-align: center;
+    text-align: justify;
 }
 
 .commitments h3 {
@@ -682,8 +682,8 @@ main{
 
 .commitments img {
     max-width: 100%;
-    min-width: 200px;       
-    height: 200px;
+    min-width: 100%;       
+    height: 300px;
     border-radius: 5px;
     display: block;
     object-fit: cover;
@@ -710,7 +710,6 @@ main{
 .commitments__card {
     flex: 1;
     text-align: center;
-    /* background-color: white; */
     padding: 16px;
     border-radius: 5px;
     display: flex;
@@ -718,6 +717,7 @@ main{
     align-items: center;
     gap: 1em;
 }
+
 
 .commitments__card:hover {
     transform: scale(1.05);
@@ -728,23 +728,52 @@ main{
     .commitments__container {
         flex-direction: row;
     }
+    .commitments__text {
+        height: 300px; /* adjust as needed */
+    }
 }
 
 @media (min-width: 1024px) {
     .commitments__container {
         gap: 2em;
-    }
-    
+    }  
 }
 
+@media (min-width: 900px) {
+    .commitments__text {
+        height: 270px; /* adjust as needed */
+    }
+}
 
+@media (min-width: 1024px) {
+    .commitments__text {
+        height: 250px; /* adjust as needed */
+    }
+}
 
+@media (min-width: 1124px) {
+    .commitments__text {
+        height: 230px; /* adjust as needed */
+    }
+}
 
+@media (min-width: 1224px) {
+    .commitments__text {
+        height: 210px; /* adjust as needed */
+    }
+}
 
+@media (min-width: 1324px) {
+    .commitments__text {
+        height: 190px; /* adjust as needed */
+    }
+}
 
-
-
-
+@media (min-width: 1424px) {
+    .commitments__text {
+        height: 170px; /* adjust as needed */
+    }
+}
 
 
 
@@ -1167,4 +1196,135 @@ figure {
 
 .team__card {
     text-align: center;
+}
+
+
+
+
+
+.education img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.education__img--top {
+    float: left;
+    margin-bottom: 1.5em;
+}
+
+.education__section--top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education li {
+    line-height: 1.5;
+}
+
+.education__section--middle {
+    margin: 20px 0;
+}
+
+.education__section--bottom {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .education__section--top {
+        flex-direction: row-reverse;
+    }
+
+    .education__img--top {
+        display: block;
+        max-width: 50%;
+        height: auto;
+        margin-right: 1.5em;
+        float: left;
+    }
+
+
+    .education__section--bottom {
+        flex-direction: row;
+    }
+    
+    .education__image--1 {
+        width: 720px;
+    }
+
+    .education__image--2 {
+        width: 405px;
+    }
+
+    .education__image--3 {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .education__img--top {
+        max-width: 40%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .education__img--top {
+        max-width: 30%;
+        height: auto;
+
+    }
+}
+
+.accommodation__container {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+}
+
+.accommodation img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .accommodation__container {
+        flex-direction: row;
+    }
+
+    .accommodation__img1 {
+        float: left;
+        max-width: 400px;
+        margin-right: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .accommodation__img2 {
+        max-width: 300px;
+        margin-left: 1.5em;
+        float: right;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .accommodation__container {
+        flex-direction: row;
+    }
+
+    .accommodation__img1 {
+        float: left;
+        max-width: 500px;
+        margin-right: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .accommodation__img2 {
+        max-width: 400px;
+        margin-left: 0.5em;
+        float: right;
+    }
 }
