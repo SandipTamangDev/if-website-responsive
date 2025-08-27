@@ -1200,7 +1200,10 @@ figure {
 
 
 
+.education, .accommodation {
+    background-color: var(--secondary-color);
 
+}
 
 .education img {
     width: 100%;
